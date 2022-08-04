@@ -1,0 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background:url(/menu/img/look.com.ua-374153.jpg) center no-repeat fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+.menu-bar{
+  background:#0000CC;
+  text-align: center;
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+  color:#fff;
+}
+.menu-bar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+  background: #6666FF;
+  border-radius: 3px;
+}
+.menu-bar .fa-solid
+{
+  margin-right: 8px;
+}
+.sum-menu-1{
+  display: none;
+}
+.menu-bar ul li:hover .sum-menu-1{
+  display: block;
+  position: absolute;
+  background: #0000CC;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menu-bar ul li:hover .sum-menu-1 ul{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sum-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sum-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sum-menu-1 ul li a:hover
+{
+  color: #FF3366;
+}
+.fa-angle-right
+{
+  float: right;
+}
+.sub-menu-2
+{
+  display: none;
+}
+.hower-me:hover .sub-menu-2
+{
+  position: absolute;
+  display: block;
+  margin-top: -20px;
+  margin-left: 140px;
+  background: #FF3366;
+}
